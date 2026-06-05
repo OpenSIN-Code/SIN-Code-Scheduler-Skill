@@ -1,0 +1,39 @@
+name: CEO Audit
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Run tests
+        run: pytest -q
+      - name: Run linters
+        run: |
+          black --check src/ tests/
+          ruff check src/ tests/
+      - name: Type check
+        run: mypy src/
+      - name: CEO Audit
+        run: |
+          pip install sin-code-bundle[ceo-audit]
+          sin ceo-audit run . --profile=QUICK --grade=B
+      - name: Upload SARIF
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: ~/ceo-audits/*/report.sarif
+          category: ceo-audit
