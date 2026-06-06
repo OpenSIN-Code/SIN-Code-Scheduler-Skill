@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sin-scheduler"
-version = "0.1.0"
+version = "0.2.0"
 description = "SIN-Scheduler Skill — MCP Server for job scheduling with cron, intervals, and execution management"
 readme = "README.md"
 license = {text = "MIT"}
@@ -42,6 +42,14 @@ dev = [
 
 [project.scripts]
 sin-scheduler-mcp = "sin_scheduler.mcp_server:main"
+# v0.2.0 — Standalone CLI shims for the 6 MCP tools. Sub-agents and shell
+# users can call these without spinning up the MCP server.
+schedule-job = "sin_scheduler.cli_shims.schedule_job:main"
+schedule-list = "sin_scheduler.cli_shims.schedule_list:main"
+schedule-cancel = "sin_scheduler.cli_shims.schedule_cancel:main"
+schedule-status = "sin_scheduler.cli_shims.schedule_status:main"
+schedule-run-now = "sin_scheduler.cli_shims.schedule_run_now:main"
+schedule-logs = "sin_scheduler.cli_shims.schedule_logs:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
