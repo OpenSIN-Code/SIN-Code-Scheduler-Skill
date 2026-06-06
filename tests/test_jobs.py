@@ -1,6 +1,6 @@
 """
 Purpose: Test Job dataclass and serialization.
-Docs: tests/test_jobs.doc.md
+Docs: test_jobs.doc.md
 """
 import json
 

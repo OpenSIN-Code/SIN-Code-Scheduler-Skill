@@ -1,6 +1,6 @@
 """
 Purpose: Core scheduler combining schedule/croniter with persistence and execution.
-Docs: sin_scheduler/scheduler.doc.md
+Docs: scheduler.doc.md
 """
 import threading
 import time

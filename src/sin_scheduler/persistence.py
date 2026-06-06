@@ -1,6 +1,6 @@
 """
 Purpose: SQLite persistence layer for jobs and execution logs.
-Docs: sin_scheduler/persistence.doc.md
+Docs: persistence.doc.md
 """
 import json
 import sqlite3

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: Show the SIN-Scheduler daemon status.
-# Docs: scripts/scheduler-status.sh.doc.md
+# Docs: scheduler-status.sh.doc.md
 
 set -euo pipefail
 

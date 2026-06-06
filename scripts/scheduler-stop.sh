@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: Stop the SIN-Scheduler daemon.
-# Docs: scripts/scheduler-stop.sh.doc.md
+# Docs: scheduler-stop.sh.doc.md
 
 set -euo pipefail
 

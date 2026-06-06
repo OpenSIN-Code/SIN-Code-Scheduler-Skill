@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: Start the SIN-Scheduler daemon.
-# Docs: scripts/scheduler-start.sh.doc.md
+# Docs: scheduler-start.sh.doc.md
 
 set -euo pipefail
 

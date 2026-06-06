@@ -1,6 +1,6 @@
 """
 Purpose: Test the MCP server tools.
-Docs: tests/test_mcp_server.doc.md
+Docs: test_mcp_server.doc.md
 """
 import json
 import tempfile

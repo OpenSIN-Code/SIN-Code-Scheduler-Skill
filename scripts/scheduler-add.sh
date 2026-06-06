@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: Add a job to the SIN-Scheduler via CLI.
-# Docs: scripts/scheduler-add.sh.doc.md
+# Docs: scheduler-add.sh.doc.md
 
 set -euo pipefail
 

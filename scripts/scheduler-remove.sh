@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: Remove a job from the SIN-Scheduler via CLI.
-# Docs: scripts/scheduler-remove.sh.doc.md
+# Docs: scheduler-remove.sh.doc.md
 
 set -euo pipefail
 

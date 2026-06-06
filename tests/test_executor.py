@@ -1,6 +1,6 @@
 """
 Purpose: Test the Executor (subprocess, timeout, error handling).
-Docs: tests/test_executor.doc.md
+Docs: test_executor.doc.md
 """
 import time
 

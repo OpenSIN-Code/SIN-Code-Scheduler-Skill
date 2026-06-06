@@ -1,6 +1,6 @@
 """
 Purpose: Test the Persistence layer (SQLite CRUD for jobs and logs).
-Docs: tests/test_persistence.doc.md
+Docs: test_persistence.doc.md
 """
 import json
 import tempfile

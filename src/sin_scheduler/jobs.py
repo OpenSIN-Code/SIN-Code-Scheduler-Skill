@@ -1,6 +1,6 @@
 """
 Purpose: Job definitions and type system for the scheduler.
-Docs: sin_scheduler/jobs.doc.md
+Docs: jobs.doc.md
 """
 import json
 import uuid

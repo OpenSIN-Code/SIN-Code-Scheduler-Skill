@@ -1,6 +1,6 @@
 """
 Purpose: Job execution engine with subprocess, timeout, and error handling.
-Docs: sin_scheduler/executor.doc.md
+Docs: executor.doc.md
 """
 import subprocess
 import threading

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Purpose: List all jobs in the SIN-Scheduler via CLI.
-# Docs: scripts/scheduler-list.sh.doc.md
+# Docs: scheduler-list.sh.doc.md
 
 set -euo pipefail
 

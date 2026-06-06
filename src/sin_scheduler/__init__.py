@@ -1,6 +1,6 @@
 """
 Purpose: SIN-Scheduler Skill package — job scheduling with cron and intervals.
-Docs: sin_scheduler/__init__.doc.md
+Docs: __init__.doc.md
 """
 from .scheduler import Scheduler
 from .jobs import Job, JobType

@@ -1,6 +1,6 @@
 """
 Purpose: Test the Scheduler (cron, interval, lifecycle, status).
-Docs: tests/test_scheduler.doc.md
+Docs: test_scheduler.doc.md
 """
 import time
 from pathlib import Path

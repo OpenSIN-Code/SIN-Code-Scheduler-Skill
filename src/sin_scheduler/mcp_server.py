@@ -1,6 +1,6 @@
 """
 Purpose: FastMCP server exposing scheduler tools for agents.
-Docs: sin_scheduler/mcp_server.doc.md
+Docs: mcp_server.doc.md
 """
 import json
 import os
